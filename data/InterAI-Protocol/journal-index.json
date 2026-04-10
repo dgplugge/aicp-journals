@@ -1465,6 +1465,22 @@
       "seq": 132,
       "dispatch_id": "DISPATCH-MSG-0101",
       "turn_mode": "round-robin"
+    },
+    {
+      "id": "MSG-0102",
+      "type": "REQUEST",
+      "from": "Don",
+      "to": [
+        "Pharos",
+        "Lodestar"
+      ],
+      "time": "2026-04-10T11:11:40-04:00",
+      "task": "API dispatch test parallel",
+      "file": "messages/2026-04-10-MSG-0102-dispatch-don.md",
+      "ref": "NONE",
+      "seq": 133,
+      "dispatch_id": "DISPATCH-MSG-0102",
+      "turn_mode": "parallel"
     }
   ],
   "protocol_amendments": [
