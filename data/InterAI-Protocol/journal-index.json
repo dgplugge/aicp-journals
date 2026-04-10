@@ -1481,6 +1481,25 @@
       "seq": 133,
       "dispatch_id": "DISPATCH-MSG-0102",
       "turn_mode": "parallel"
+    },
+    {
+      "id": "MSG-0103",
+      "type": "REQUEST",
+      "from": "Don",
+      "to": [
+        "Pharos",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident"
+      ],
+      "time": "2026-04-10T11:11:45-04:00",
+      "task": "API dispatch test sequential",
+      "file": "messages/2026-04-10-MSG-0103-dispatch-don.md",
+      "ref": "NONE",
+      "seq": 134,
+      "dispatch_id": "DISPATCH-MSG-0103",
+      "turn_mode": "sequential"
     }
   ],
   "protocol_amendments": [
