@@ -1501,6 +1501,23 @@
       "file": "messages/2026-04-10-MSG-0103-architectural_recommendation-trident.md",
       "ref": "RT-HUB-0017",
       "seq": 134
+    },
+    {
+      "id": "MSG-0104",
+      "type": "ARCHITECTURAL_RECOMMENDATION",
+      "from": "Forge",
+      "to": [
+        "Don",
+        "Pharos",
+        "Lodestar",
+        "SpinDrift",
+        "Trident"
+      ],
+      "time": "2026-04-10T13:55:09-04:00",
+      "task": "VB.NET Adapter Rate Limiter and Token Estimation Integration Strategy",
+      "file": "messages/2026-04-10-MSG-0104-architectural_recommendation-forge.md",
+      "ref": "RT-HUB-0017",
+      "seq": 135
     }
   ],
   "protocol_amendments": [
