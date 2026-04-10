@@ -1448,58 +1448,6 @@
       "file": "messages/2026-04-10-MSG-0100-update-pharos.md",
       "ref": "MSG-0098",
       "seq": 131
-    },
-    {
-      "id": "MSG-0101",
-      "type": "REQUEST",
-      "from": "Don",
-      "to": [
-        "Pharos",
-        "Lodestar",
-        "Forge"
-      ],
-      "time": "2026-04-10T11:11:34-04:00",
-      "task": "API dispatch test",
-      "file": "messages/2026-04-10-MSG-0101-dispatch-don.md",
-      "ref": "NONE",
-      "seq": 132,
-      "dispatch_id": "DISPATCH-MSG-0101",
-      "turn_mode": "round-robin"
-    },
-    {
-      "id": "MSG-0102",
-      "type": "REQUEST",
-      "from": "Don",
-      "to": [
-        "Pharos",
-        "Lodestar"
-      ],
-      "time": "2026-04-10T11:11:40-04:00",
-      "task": "API dispatch test parallel",
-      "file": "messages/2026-04-10-MSG-0102-dispatch-don.md",
-      "ref": "NONE",
-      "seq": 133,
-      "dispatch_id": "DISPATCH-MSG-0102",
-      "turn_mode": "parallel"
-    },
-    {
-      "id": "MSG-0103",
-      "type": "REQUEST",
-      "from": "Don",
-      "to": [
-        "Pharos",
-        "Lodestar",
-        "Forge",
-        "SpinDrift",
-        "Trident"
-      ],
-      "time": "2026-04-10T11:11:45-04:00",
-      "task": "API dispatch test sequential",
-      "file": "messages/2026-04-10-MSG-0103-dispatch-don.md",
-      "ref": "NONE",
-      "seq": 134,
-      "dispatch_id": "DISPATCH-MSG-0103",
-      "turn_mode": "sequential"
     }
   ],
   "protocol_amendments": [
