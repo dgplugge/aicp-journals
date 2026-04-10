@@ -99,7 +99,7 @@ function getFilteredMessages() {
 }
 
 function renderMessages() {
-  const filtered = getFilteredMessages();
+  const filtered = getFilteredMessages().reverse();
   const countDiv = document.getElementById('message-count');
   const total = (allMessages[currentProject] || []).length;
   countDiv.textContent = filtered.length === total
