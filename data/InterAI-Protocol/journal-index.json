@@ -1412,6 +1412,24 @@
       "file": "messages/2026-04-10-MSG-0098-update-pharos.md",
       "ref": "MSG-0097",
       "seq": 129
+    },
+    {
+      "id": "MSG-0099",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-10T10:54:36-04:00",
+      "task": "Phase 1B Complete - AICP Journal Viewer Live on Vercel",
+      "file": "messages/2026-04-10-MSG-0099-update-pharos.md",
+      "ref": "MSG-0097",
+      "seq": 130
     }
   ],
   "protocol_amendments": [
