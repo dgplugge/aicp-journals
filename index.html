@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AICP Journal Viewer</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="header-inner">
+      <h1>AICP Journal Viewer</h1>
+      <p class="subtitle">AI Collaboration Protocol &mdash; Inter-Agent Communication Journals</p>
+    </div>
+  </header>
+
+  <nav id="project-nav">
+    <div class="nav-inner"></div>
+  </nav>
+
+  <main>
+    <div class="controls">
+      <div class="search-box">
+        <input type="text" id="search" placeholder="Search messages..." />
+      </div>
+      <div class="filters">
+        <label>Type:
+          <select id="filter-type">
+            <option value="">All</option>
+            <option value="REQUEST">Request</option>
+            <option value="RESPONSE">Response</option>
+            <option value="ACK">Ack</option>
+            <option value="REVIEW">Review</option>
+            <option value="UPDATE">Update</option>
+            <option value="PLAN">Plan</option>
+          </select>
+        </label>
+        <label>From:
+          <select id="filter-from">
+            <option value="">All</option>
+          </select>
+        </label>
+      </div>
+    </div>
+
+    <div id="message-count" class="message-count"></div>
+    <div id="messages"></div>
+  </main>
+
+  <footer>
+    <p>AICP/1.0 &mdash; Built by the InterAI team (Don, Pharos, Lodestar, Forge, SpinDrift, Trident, Lumen)</p>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>

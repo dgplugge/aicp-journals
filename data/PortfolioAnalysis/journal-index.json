@@ -1,0 +1,23 @@
+{
+  "project": "Portfolio Analysis",
+  "messages": [
+    {
+      "id": "PA-MSG-0001",
+      "file": "messages/2026-03-23-PA-MSG-0001-request-don.md",
+      "from": "Don",
+      "to": "Pharos",
+      "type": "REQUEST",
+      "date": "2026-03-23",
+      "subject": "Initialize Portfolio Analysis project"
+    },
+    {
+      "id": "PA-MSG-0002",
+      "file": "messages/2026-03-23-PA-MSG-0002-response-pharos.md",
+      "from": "Pharos",
+      "to": "Don",
+      "type": "RESPONSE",
+      "date": "2026-03-23",
+      "subject": "Delivered MVP scaffold with merge functionality"
+    }
+  ]
+}
