@@ -1448,6 +1448,24 @@
       "file": "messages/2026-04-10-MSG-0100-update-pharos.md",
       "ref": "MSG-0098",
       "seq": 131
+    },
+    {
+      "id": "MSG-0101",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-10T11:12:52-04:00",
+      "task": "Phase 2 Slice 3 Complete - Turn Modes and Dispatch",
+      "file": "messages/2026-04-10-MSG-0101-update-pharos.md",
+      "ref": "MSG-0100",
+      "seq": 132
     }
   ],
   "protocol_amendments": [
