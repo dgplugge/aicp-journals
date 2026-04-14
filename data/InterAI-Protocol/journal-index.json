@@ -1590,6 +1590,22 @@
       "file": "messages/2026-04-10-MSG-0108-update-pharos.md",
       "ref": "MSG-0107",
       "seq": 139
+    },
+    {
+      "id": "MSG-0109",
+      "type": "REQUEST",
+      "from": "Don",
+      "to": [
+        "Pharos",
+        "Lodestar"
+      ],
+      "time": "2026-04-14T09:36:30-04:00",
+      "task": "Phase 2 API Verification",
+      "file": "messages/2026-04-14-MSG-0109-dispatch-don.md",
+      "ref": "NONE",
+      "seq": 140,
+      "dispatch_id": "DISPATCH-MSG-0109",
+      "turn_mode": "sequential"
     }
   ],
   "protocol_amendments": [
