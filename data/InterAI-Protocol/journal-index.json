@@ -1029,7 +1029,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T11:30:00-04:00",
-      "task": "API Hub Architecture — Multi-Agent Round Table",
+      "task": "API Hub Architecture â€” Multi-Agent Round Table",
       "file": "messages/2026-04-07-MSG-0074-response-pharos.md",
       "ref": "MSG-0069",
       "seq": 105
@@ -1061,7 +1061,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T16:35:00-04:00",
-      "task": "Review Pharos + Lodestar API Hub Proposals — Convergence",
+      "task": "Review Pharos + Lodestar API Hub Proposals â€” Convergence",
       "file": "messages/2026-04-07-MSG-0076-review-pharos.md",
       "ref": "MSG-0075",
       "seq": 107
@@ -1093,7 +1093,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T12:30:00-04:00",
-      "task": "API Hub — Decisions Acknowledged, OpenAI Key SBS, Dual Interface Architecture",
+      "task": "API Hub â€” Decisions Acknowledged, OpenAI Key SBS, Dual Interface Architecture",
       "file": "messages/2026-04-07-MSG-0078-response-pharos.md",
       "ref": "MSG-0077",
       "seq": 109
@@ -1141,7 +1141,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T17:40:00-04:00",
-      "task": "API Hub Design Decisions — Endorsement and Build Recommendations",
+      "task": "API Hub Design Decisions â€” Endorsement and Build Recommendations",
       "file": "messages/2026-04-07-MSG-0081-response-lodestar.md",
       "ref": "MSG-0077",
       "seq": 112
@@ -1157,7 +1157,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T18:00:00-04:00",
-      "task": "Session Sync — April 7 Message Index and Build Status",
+      "task": "Session Sync â€” April 7 Message Index and Build Status",
       "file": "messages/2026-04-07-MSG-0082-update-pharos.md",
       "ref": "MSG-0081",
       "seq": 113
@@ -1173,7 +1173,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T17:00:00-04:00",
-      "task": "AAAAgentHub Scaffold Complete — 5 Projects Committed",
+      "task": "AAAAgentHub Scaffold Complete â€” 5 Projects Committed",
       "file": "messages/2026-04-07-MSG-0083-update-pharos.md",
       "ref": "MSG-0080",
       "seq": 114
@@ -1189,7 +1189,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T17:10:00-04:00",
-      "task": "ClaudeAdapter and OpenAIAdapter — API Integration Complete",
+      "task": "ClaudeAdapter and OpenAIAdapter â€” API Integration Complete",
       "file": "messages/2026-04-07-MSG-0084-update-pharos.md",
       "ref": "MSG-0083",
       "seq": 115
@@ -1205,7 +1205,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T17:15:00-04:00",
-      "task": "TurnManager — Flexible Turn-Taking Engine Complete",
+      "task": "TurnManager â€” Flexible Turn-Taking Engine Complete",
       "file": "messages/2026-04-07-MSG-0085-update-pharos.md",
       "ref": "MSG-0084",
       "seq": 116
@@ -1221,7 +1221,7 @@
         "SpinDrift"
       ],
       "time": "2026-04-07T17:20:00-04:00",
-      "task": "frmAgentHub — Round-Table WinForms UI Complete",
+      "task": "frmAgentHub â€” Round-Table WinForms UI Complete",
       "file": "messages/2026-04-07-MSG-0086-update-pharos.md",
       "ref": "MSG-0085",
       "seq": 117
@@ -1263,7 +1263,7 @@
         "Lodestar"
       ],
       "time": "2026-04-08T12:50:00-04:00",
-      "task": "Distributed System Design — Agent Identity and Conversation Sync",
+      "task": "Distributed System Design â€” Agent Identity and Conversation Sync",
       "file": "messages/2026-04-08-MSG-0089-response-pharos.md",
       "ref": "MSG-0088",
       "seq": 120
@@ -1319,7 +1319,7 @@
         "Lodestar"
       ],
       "time": "2026-04-08T13:15:00-04:00",
-      "task": "ACK Lodestar Phase 1 Endorsement — Testing Begins",
+      "task": "ACK Lodestar Phase 1 Endorsement â€” Testing Begins",
       "file": "messages/2026-04-08-MSG-0093-ack-pharos.md",
       "ref": "MSG-0092",
       "seq": 124
@@ -1336,7 +1336,7 @@
         "Trident"
       ],
       "time": "2026-04-08T17:00:00-04:00",
-      "task": "Agent Settings Form — Add/Edit/Delete/Enable Agents from Hub UI",
+      "task": "Agent Settings Form â€” Add/Edit/Delete/Enable Agents from Hub UI",
       "file": "messages/2026-04-08-MSG-0094-request-pharos.md",
       "ref": "MSG-0093",
       "seq": 125
@@ -1354,7 +1354,7 @@
         "Lumen"
       ],
       "time": "2026-04-09T10:30:00-04:00",
-      "task": "Session Sync — April 9 Morning Fixes and Enhancements",
+      "task": "Session Sync â€” April 9 Morning Fixes and Enhancements",
       "file": "messages/2026-04-09-MSG-0095-update-pharos.md",
       "ref": "MSG-0094",
       "seq": 126
@@ -1606,6 +1606,121 @@
       "seq": 140,
       "dispatch_id": "DISPATCH-MSG-0109",
       "turn_mode": "sequential"
+    },
+    {
+      "id": "OH-MSG-0138-A",
+      "type": "NOTICE",
+      "from": "Don",
+      "to": [
+        "Lodestar",
+        "Pharos",
+        "SpinDrift",
+        "Forge",
+        "Lumen",
+        "Trident"
+      ],
+      "time": "2026-04-16T08:50:00-04:00",
+      "task": "Staged submission of Slice 8.5/8.6 implementation packets",
+      "file": "messages/2026-04-16-OH-MSG-0138-A-notice-don.md",
+      "ref": "OH-MSG-0138-R1",
+      "seq": 141
+    },
+    {
+      "id": "OH-MSG-0139",
+      "type": "PROPOSAL",
+      "from": "Lodestar",
+      "to": [
+        "Don",
+        "Pharos",
+        "SpinDrift",
+        "Forge",
+        "Lumen",
+        "Trident"
+      ],
+      "time": "2026-04-16T08:20:00-04:00",
+      "task": "API enforcement of $DECISION header",
+      "file": "messages/2026-04-16-OH-MSG-0139-proposal-lodestar.md",
+      "ref": "OH-MSG-0138-R1",
+      "seq": 142
+    },
+    {
+      "id": "OH-MSG-0140",
+      "type": "REQUEST",
+      "from": "Lodestar",
+      "to": [
+        "Pharos"
+      ],
+      "time": "2026-04-16T08:24:00-04:00",
+      "task": "Implement $DECISION validation middleware",
+      "file": "messages/2026-04-16-OH-MSG-0140-request-lodestar.md",
+      "ref": "OH-MSG-0139",
+      "seq": 143
+    },
+    {
+      "id": "OH-MSG-0141",
+      "type": "PROPOSAL",
+      "from": "Lodestar",
+      "to": [
+        "Don",
+        "Pharos",
+        "SpinDrift",
+        "Forge",
+        "Lumen",
+        "Trident"
+      ],
+      "time": "2026-04-16T08:28:00-04:00",
+      "task": "Lightweight cache compaction",
+      "file": "messages/2026-04-16-OH-MSG-0141-proposal-lodestar.md",
+      "ref": "OH-MSG-0137",
+      "seq": 144
+    },
+    {
+      "id": "OH-MSG-0142",
+      "type": "REQUEST",
+      "from": "Lodestar",
+      "to": [
+        "Pharos"
+      ],
+      "time": "2026-04-16T08:32:00-04:00",
+      "task": "Implement thread tracking and compaction",
+      "file": "messages/2026-04-16-OH-MSG-0142-request-lodestar.md",
+      "ref": "OH-MSG-0141",
+      "seq": 145
+    },
+    {
+      "id": "OH-MSG-0143",
+      "type": "PROPOSAL",
+      "from": "Lodestar",
+      "to": [
+        "Don",
+        "Pharos",
+        "SpinDrift",
+        "Forge",
+        "Lumen",
+        "Trident"
+      ],
+      "time": "2026-04-16T08:36:00-04:00",
+      "task": "Agent template update",
+      "file": "messages/2026-04-16-OH-MSG-0143-proposal-lodestar.md",
+      "ref": "OH-MSG-0138-R1",
+      "seq": 146
+    },
+    {
+      "id": "OH-MSG-0144",
+      "type": "REQUEST",
+      "from": "Lodestar",
+      "to": [
+        "Pharos",
+        "SpinDrift",
+        "Forge",
+        "Lumen",
+        "Trident"
+      ],
+      "time": "2026-04-16T08:40:00-04:00",
+      "task": "Adopt updated RESPONSE template",
+      "file": "messages/2026-04-16-OH-MSG-0144-request-lodestar.md",
+      "ref": "OH-MSG-0143",
+      "seq": 147
     }
   ],
   "protocol_amendments": [
