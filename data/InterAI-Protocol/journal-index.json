@@ -1828,6 +1828,23 @@
       "file": "messages/2026-04-17-MSG-0150-response-lodestar.md",
       "ref": "MSG-0147",
       "seq": 153
+    },
+    {
+      "id": "MSG-0151",
+      "type": "RESPONSE",
+      "from": "SpinDrift",
+      "to": [
+        "Don",
+        "Pharos",
+        "Lodestar",
+        "Forge",
+        "Trident"
+      ],
+      "time": "2026-04-17T13:46:07-04:00",
+      "task": "Hub API-server bootstrap — spawn, probe, or supervise?",
+      "file": "messages/2026-04-17-MSG-0151-response-spindrift.md",
+      "ref": "MSG-0147",
+      "seq": 154
     }
   ],
   "protocol_amendments": [
