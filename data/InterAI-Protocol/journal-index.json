@@ -1776,6 +1776,24 @@
       "seq": 150,
       "dispatch_id": "DISPATCH-MSG-0147",
       "turn_mode": "round-robin"
+    },
+    {
+      "id": "MSG-0148",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-17T13:40:30-04:00",
+      "task": "Dispatch round MSG-0147 — consensus summary and kernel preamble verification",
+      "file": "messages/2026-04-17-MSG-0148-update-pharos.md",
+      "ref": "NONE",
+      "seq": 151
     }
   ],
   "protocol_amendments": [
