@@ -1811,6 +1811,23 @@
       "file": "messages/2026-04-17-MSG-0149-response-pharos.md",
       "ref": "MSG-0147",
       "seq": 152
+    },
+    {
+      "id": "MSG-0150",
+      "type": "RESPONSE",
+      "from": "Lodestar",
+      "to": [
+        "Don",
+        "Pharos",
+        "Forge",
+        "SpinDrift",
+        "Trident"
+      ],
+      "time": "2026-04-17T13:46:05-04:00",
+      "task": "Hub API-server bootstrap — spawn, probe, or supervise?",
+      "file": "messages/2026-04-17-MSG-0150-response-lodestar.md",
+      "ref": "MSG-0147",
+      "seq": 153
     }
   ],
   "protocol_amendments": [
