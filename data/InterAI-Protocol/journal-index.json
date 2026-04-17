@@ -1721,6 +1721,24 @@
       "file": "messages/2026-04-16-OH-MSG-0144-request-lodestar.md",
       "ref": "OH-MSG-0143",
       "seq": 147
+    },
+    {
+      "id": "MSG-0145",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-17T11:19:52-04:00",
+      "task": "Add mvp-build context kernel for dispatch stack/state pinning",
+      "file": "messages/2026-04-17-MSG-0145-update-pharos.md",
+      "ref": "NONE",
+      "seq": 148
     }
   ],
   "protocol_amendments": [
