@@ -2002,6 +2002,24 @@
       "file": "messages/2026-04-17-MSG-0160-response-lumen.md",
       "ref": "MSG-0155",
       "seq": 163
+    },
+    {
+      "id": "MSG-0161",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-17T16:12:09-04:00",
+      "task": "Agent profile card system — repo side (NEXT_STEPS #6)",
+      "file": "messages/2026-04-17-MSG-0161-update-pharos.md",
+      "ref": "NONE",
+      "seq": 164
     }
   ],
   "protocol_amendments": [
