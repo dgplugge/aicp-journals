@@ -1,0 +1,223 @@
+$PROTO: AICP/1.0
+$TYPE: REQUEST
+$ID: MSG-0147
+$SEQ: 150
+$FROM: Don
+$TO: Pharos, Lodestar, Forge, SpinDrift, Trident
+$TIME: 2026-04-17T13:29:40-04:00
+$TASK: Hub API-server bootstrap — spawn, probe, or supervise?
+$STATUS: IN_PROGRESS
+$ROLE: Orchestrator
+$INTENT: Dispatch (round-robin) to 5 agents
+PROJECT: InterAI-Protocol
+TURN_MODE: round-robin
+DISPATCH_ID: DISPATCH-MSG-0147
+
+---PAYLOAD---
+
+---KERNEL_PREAMBLE---
+
+# CONTEXT KERNEL: MVP Build
+# Version: 1.2 | Updated: 2026-04-17 | Task: interai-protocol MVP convergence
+
+---PROTO---
+
+Repo: interai-protocol  (H:\Code\interai-protocol)
+Stack: Python 3 / FastAPI / pytest / Pydantic v2
+NOT a Node.js repo. Do not propose Express, Winston, Supertest, or any
+JavaScript toolchain. If a design requires a Node library, restate it
+using the Python equivalent (FastAPI middleware, `logging`/structlog,
+pytest + httpx.TestClient).
+
+AICP envelope discipline:
+  $PROTO: AICP/1.0
+  $TYPE:  REQUEST | RESPONSE | ACK | ERROR | UPDATE
+  $ID, $REF, $SEQ, $FROM, $TO, $STATUS, $TASK, $DECISION
+
+$DECISION header — canonical values (enforced by decision_validator.py):
+  CHALLENGE — disagree with a prior claim; state reason
+  CLARIFY   — ask for missing information before committing
+  EXECUTE   — commit to a concrete action
+Only these three values are valid. Do NOT invent new states
+(e.g. PROPOSED, APPROVED, DEFERRED — those are out of spec).
+
+Every RESPONSE message MUST carry a $DECISION header. Missing or
+invalid → rejected with DECISION_REQUIRED or INVALID_DECISION_STATE.
+
+Open tasks use: $STATUS: OPEN  +  $TASK: <description>
+  (Not $OPEN: — that form will not be parsed by the compactor.)
+
+NO-FABRICATION RULE (mandatory):
+  If any input referenced in the prompt is missing from your context
+  (e.g. "using the mvp-build kernel" but the kernel text is not present),
+  you MUST respond with $DECISION: CLARIFY and name the missing input.
+  You MUST NOT:
+    - Infer, guess, or reconstruct kernel contents from memory
+    - Propose candidates that are not visibly present in the prompt
+    - Issue $DECISION: EXECUTE against inferred or fabricated options
+    - Present hallucinated content inside a summary table or consensus frame
+  Fabrication with a confident EXECUTE is the worst failure mode in
+  this system — it manufactures false consensus. When blocked by
+  missing input, one line of CLARIFY is the correct, complete response.
+  Do not pad CLARIFY responses; ~30 tokens is sufficient.
+
+---ROSTER---
+
+Active agents for this kernel:
+
+D = Don       | OR  | Orchestrator          | Human operator
+P = Pharos    | LC  | Lead Coder            | Anthropic / Claude Sonnet 4
+L = Lodestar  | LD  | Lead Designer         | OpenAI / GPT-4o
+F = Forge     | IL  | Design/Build Spec     | OpenAI / o3-mini
+S = SpinDrift | RV  | Reviewer/Integrator   | OpenAI / GPT-4o
+T = Trident   | AR  | Research/Synthesis    | Google / Gemini 2.5 Flash
+U = Lumen     | ES  | Efficiency Specialist | Mistral / Devstral 2
+
+Identity rule: agents must use their own code in all messages.
+Never adopt another agent's code.
+
+---STATE---
+
+Repo state (as of 2026-04-17, commit ebf2654):
+
+BUILT (in tree, tested, committed):
+  api/server.py                          — FastAPI journal API (v2.3.0)
+    Endpoints: /threads, /dispatch, /kernels, /health
+    Dispatch supports PARALLEL | SEQUENTIAL | ROUND_ROBIN turn modes
+    Optional ?kernel=<name> query injects a context kernel
+    decision_validator + thread_tracker invoked on both /messages and
+      /dispatch paths; responses carry messages_since_compact + compact_due
+  src/acal/converter.py                  — ACAL ↔ AICP bidirectional
+  src/acal/verifier.py                   — round-trip verification
+  src/kernel/loader.py                   — kernel discovery + 8K budget
+  src/middleware/rate_limiter.py         — per-provider delays
+  src/middleware/retry_handler.py        — per-provider retry config
+  src/middleware/token_estimator.py      — char/token estimate
+  src/middleware/decision_validator.py   — $DECISION enforcement (Slice 8.6)
+  src/middleware/thread_compactor.py     — thread summaries at N=10 (Slice 8.5)
+  src/hub/{cli,status}.py                — health dashboard + CLI
+  viewer/server.py                       — AICP Viewer (filters, search, badges)
+  kernels/kernel-acal-dev.md             — first live kernel
+
+NOT YET BUILT (candidates for next work):
+  Context Kernel update protocol — how Hub writes learnings back into
+    STATE/MEMORY sections after a dispatch. Loader reads; nothing writes.
+  CBOR compaction — thread_compactor.py currently emits JSON sidecars.
+    CBOR optimization was explicitly deferred in Slice 8.5.
+  Auto-compact on threshold — compact_due is surfaced but /compact must
+    still be called explicitly. Consider auto-trigger in future slice.
+  End-to-end integration test — dispatch → validator → compactor → summary
+    covered per-module but no full-round pytest yet.
+
+EXTERNAL (Hub VB.NET app, not in this repo):
+  Provider API calls (Anthropic/OpenAI/Google/Mistral SDKs)
+  Turn-mode orchestration (hourglass posting, dispatch rounds)
+
+---MEMORY---
+
+[2026-04-14] ACAL v0.1 approved with amendments (APR+, Hub consensus).
+  AMD-1 delimiter escapes, AMD-2 edge tokens, AMD-3 identity anchoring.
+
+[2026-04-14] Context Kernel v0.1 concept ratified. This file format.
+
+[2026-04-16] Slices 8.5 ($DECISION enforcement) and 8.6 (thread
+  compaction at N=10) committed (ebf2654).
+
+[2026-04-16] Kernel loader wired into dispatch via ?kernel= query
+  param (e8acbd4). Kernels inject as system-prompt preamble.
+
+[2026-04-17] Hub transcript analysis revealed two bloat patterns:
+  (a) Agents design against wrong stack (proposed Node.js for a
+      Python repo) when stack not pinned in preamble.
+  (b) Agents propose features that already exist in the tree when
+      recent commits are not surfaced. This kernel is the corrective.
+
+[2026-04-17] NEXT_STEPS #1 [P,F] DONE: decision_validator and
+  thread_tracker now invoked on /dispatch as well as /messages.
+  Both endpoints return messages_since_compact + compact_due so Hub
+  can trigger /compact when threshold reached. Tests: 175 passed.
+
+---DICT---
+
+Task-specific tokens for MVP convergence:
+
+MVP = Minimum viable product for the interai-protocol repo
+WIRE = Register existing middleware into FastAPI request pipeline
+MWR = Middleware registration (FastAPI .add_middleware call)
+SOT = Source of truth (canonical spec/impl)
+STALE = Agent claim that conflicts with current repo state
+SKEW = Design proposed against the wrong stack
+
+---NEXT_STEPS---
+
+Candidate next moves (choose ONE per round, do not fan out):
+
+1. [P,F] WIRE decision_validator + thread_compactor into api/server.py
+   dispatch pipeline. Both modules exist; neither is currently invoked
+   on live dispatches. Smallest high-value delta.
+   Status: DONE (2026-04-17, MSG-0146) — see MEMORY.
+
+2. [L]  Design kernel update protocol — how does Hub write agent
+   decisions back into STATE/MEMORY sections of the active kernel?
+   Currently kernels are read-only at runtime.
+   Status: PROPOSED — architecture work
+
+3. [U]  Propose token-budget enforcement at dispatch time (warn if
+   kernel + prompt + expected response exceeds provider context).
+   Status: PROPOSED
+
+4. [S]  Integration test covering a full round: dispatch → validator
+   → compactor → summary sidecar. End-to-end pytest.
+   Status: PROPOSED
+
+5. [T]  Research: do any providers support native structured output
+   that could enforce $DECISION server-side? Report, don't implement.
+   Status: PROPOSED
+
+Do NOT propose:
+  - Anything Node.js / Express / Winston / Supertest
+  - Re-building decision_validator or thread_compactor (already shipped)
+  - A new $DECISION value outside {CHALLENGE, CLARIFY, EXECUTE}
+
+
+---END_KERNEL_PREAMBLE---
+
+Design question for the Hub.
+
+## Problem
+
+The AICP API server (api/server.py on port 8080) and the Hub (VB.NET app) are started independently today. If I launch the Hub and the server isn't running, every dispatch fails silently until I notice and start it by hand. I'd like the Hub to handle this.
+
+## Three candidate approaches
+
+**1. Port probe + spawn at Hub startup.**
+Hub tries TcpClient.Connect("127.0.0.1", 8080) on launch. If the port is refused, Hub calls Process.Start("python server.py"). If the port already answers, Hub does nothing. The server's lifetime is independent of the Hub — it keeps running if the Hub exits.
+
+**2. Supervisor pattern.**
+Hub owns the server process for its own lifetime: launches on startup, kills on shutdown. Clean semantics, but the server can no longer be run independently (e.g. Pharos hitting it from Claude Code when the Hub is closed).
+
+**3. Health-aware reconnect.**
+Hub polls /health on an interval; on failure, respawns. Adds real process management — PID tracking, crash-loop detection, log rotation.
+
+## Pharos recommendation
+
+Option 1. It gives Don the "Hub starts everything" convenience without coupling the server's lifetime to the Hub. Option 2 breaks independent access; Option 3 is overkill for a dev rig.
+
+One wrinkle: /messages does a git push on every write, so the spawned server inherits the launching user's git credentials. On Don's machine that's fine, but naming it for the record.
+
+## What I'm asking
+
+Each agent respond with:
+
+- $DECISION: CHALLENGE | CLARIFY | EXECUTE (per kernel)
+- One paragraph rationale
+- If CHALLENGE: which option you prefer and why, or a fourth option the kernel would endorse
+- If CLARIFY: name the missing input (no-fabrication rule)
+- If EXECUTE: confirm Option 1 and flag any implementation risks specific to VB.NET / Windows process spawning
+
+Keep it tight — this is a decision round, not an architecture essay. ~100-200 tokens per response is plenty.
+
+[Dispatch Mode: round-robin]
+[Agents: Pharos, Lodestar, Forge, SpinDrift, Trident]
+[Each agent will see prior responses before replying]
+---END---
