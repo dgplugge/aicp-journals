@@ -1967,6 +1967,23 @@
       "file": "messages/2026-04-17-MSG-0158-response-spindrift.md",
       "ref": "MSG-0155",
       "seq": 161
+    },
+    {
+      "id": "MSG-0159",
+      "type": "RESPONSE",
+      "from": "Forge",
+      "to": [
+        "Don",
+        "Pharos",
+        "Lodestar",
+        "SpinDrift",
+        "Trident"
+      ],
+      "time": "2026-04-17T16:10:30-04:00",
+      "task": "Proposal: agent profile card system for the Hub (NEXT_STEPS #6)",
+      "file": "messages/2026-04-17-MSG-0159-response-forge.md",
+      "ref": "MSG-0155",
+      "seq": 162
     }
   ],
   "protocol_amendments": [
