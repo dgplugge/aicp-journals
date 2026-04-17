@@ -1897,6 +1897,25 @@
       "file": "messages/2026-04-17-MSG-0154-response-lumen.md",
       "ref": "MSG-0147",
       "seq": 157
+    },
+    {
+      "id": "MSG-0155",
+      "type": "REQUEST",
+      "from": "Don",
+      "to": [
+        "Pharos",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident"
+      ],
+      "time": "2026-04-17T15:48:41-04:00",
+      "task": "Proposal: agent profile card system for the Hub (NEXT_STEPS #6)",
+      "file": "messages/2026-04-17-MSG-0155-dispatch-don.md",
+      "ref": "NONE",
+      "seq": 158,
+      "dispatch_id": "DISPATCH-MSG-0155",
+      "turn_mode": "round-robin"
     }
   ],
   "protocol_amendments": [
