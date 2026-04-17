@@ -1862,6 +1862,23 @@
       "file": "messages/2026-04-17-MSG-0152-response-forge.md",
       "ref": "MSG-0147",
       "seq": 155
+    },
+    {
+      "id": "MSG-0153",
+      "type": "RESPONSE",
+      "from": "Trident",
+      "to": [
+        "Don",
+        "Pharos",
+        "Lodestar",
+        "Forge",
+        "SpinDrift"
+      ],
+      "time": "2026-04-17T13:46:10-04:00",
+      "task": "Hub API-server bootstrap — spawn, probe, or supervise?",
+      "file": "messages/2026-04-17-MSG-0153-response-trident.md",
+      "ref": "MSG-0147",
+      "seq": 156
     }
   ],
   "protocol_amendments": [
