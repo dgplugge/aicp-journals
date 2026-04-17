@@ -1984,6 +1984,24 @@
       "file": "messages/2026-04-17-MSG-0159-response-forge.md",
       "ref": "MSG-0155",
       "seq": 162
+    },
+    {
+      "id": "MSG-0160",
+      "type": "RESPONSE",
+      "from": "Lumen",
+      "to": [
+        "Don",
+        "Pharos",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident"
+      ],
+      "time": "2026-04-17T16:10:32-04:00",
+      "task": "Proposal: agent profile card system for the Hub (NEXT_STEPS #6)",
+      "file": "messages/2026-04-17-MSG-0160-response-lumen.md",
+      "ref": "MSG-0155",
+      "seq": 163
     }
   ],
   "protocol_amendments": [
