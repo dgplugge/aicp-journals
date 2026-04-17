@@ -1739,6 +1739,24 @@
       "file": "messages/2026-04-17-MSG-0145-update-pharos.md",
       "ref": "NONE",
       "seq": 148
+    },
+    {
+      "id": "MSG-0146",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-17T11:56:21-04:00",
+      "task": "Wire decision_validator + thread_tracker into /dispatch path (NEXT_STEPS #1)",
+      "file": "messages/2026-04-17-MSG-0146-update-pharos.md",
+      "ref": "NONE",
+      "seq": 149
     }
   ],
   "protocol_amendments": [
