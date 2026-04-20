@@ -2020,6 +2020,24 @@
       "file": "messages/2026-04-17-MSG-0161-update-pharos.md",
       "ref": "NONE",
       "seq": 164
+    },
+    {
+      "id": "MSG-0162",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-20T14:45:07-04:00",
+      "task": "Hub card injection — live verification, payload logging, preview mode, SystemPrompt conflict fix",
+      "file": "messages/2026-04-20-MSG-0162-update-pharos.md",
+      "ref": "MSG-0161",
+      "seq": 165
     }
   ],
   "protocol_amendments": [
