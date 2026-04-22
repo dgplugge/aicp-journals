@@ -2038,6 +2038,60 @@
       "file": "messages/2026-04-20-MSG-0162-update-pharos.md",
       "ref": "MSG-0161",
       "seq": 165
+    },
+    {
+      "id": "MSG-0163",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-20T16:45:00-04:00",
+      "task": "Hub payload bloat reduction — journal cap, prompt dedup, summarizer guard",
+      "file": "messages/2026-04-20-MSG-0163-update-pharos.md",
+      "ref": "MSG-0162",
+      "seq": 166
+    },
+    {
+      "id": "MSG-0164",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-21T00:15:00-04:00",
+      "task": "Dispatch Cost Ledger — Slice 1 shipped (observability, JSONL-backed)",
+      "file": "messages/2026-04-21-MSG-0164-update-pharos.md",
+      "ref": "MSG-0163",
+      "seq": 167
+    },
+    {
+      "id": "MSG-0165",
+      "type": "JOURNAL",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-22T12:14:02-04:00",
+      "task": "Yesterday closeout (1/2) - Slice 2 verified + Round 1 card tuning",
+      "file": "messages/2026-04-22-MSG-0165-journal-pharos.md",
+      "ref": "MSG-0169",
+      "seq": 168
     }
   ],
   "protocol_amendments": [
