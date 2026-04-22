@@ -8,7 +8,8 @@
     "Forge",
     "SpinDrift",
     "Trident",
-    "Lumen"
+    "Lumen",
+    "All"
   ],
   "messages": [
     {
@@ -2110,6 +2111,19 @@
       "file": "messages/2026-04-22-MSG-0166-journal-pharos.md",
       "ref": "NONE",
       "seq": 169
+    },
+    {
+      "id": "MSG-0167",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-22T14:34:27-04:00",
+      "task": "Round 1 close - hourglass dispatch on Slice 3 priorities",
+      "file": "messages/2026-04-22-MSG-0167-report-pharos.md",
+      "ref": "MSG-0166",
+      "seq": 170
     }
   ],
   "protocol_amendments": [
