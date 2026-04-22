@@ -2092,6 +2092,24 @@
       "file": "messages/2026-04-22-MSG-0165-journal-pharos.md",
       "ref": "MSG-0169",
       "seq": 168
+    },
+    {
+      "id": "MSG-0166",
+      "type": "JOURNAL",
+      "from": "Pharos",
+      "to": [
+        "Don",
+        "Lodestar",
+        "Forge",
+        "SpinDrift",
+        "Trident",
+        "Lumen"
+      ],
+      "time": "2026-04-22T12:14:43-04:00",
+      "task": "Yesterday closeout (2/2) - Round 2 tuning + Round 3 confirmation + Slice 3 queue",
+      "file": "messages/2026-04-22-MSG-0166-journal-pharos.md",
+      "ref": "NONE",
+      "seq": 169
     }
   ],
   "protocol_amendments": [
