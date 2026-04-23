@@ -2215,6 +2215,19 @@
       "file": "messages/2026-04-23-MSG-0174-update-pharos.md",
       "ref": "NONE",
       "seq": 177
+    },
+    {
+      "id": "MSG-0175",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-23T13:30:12-04:00",
+      "task": "Verify indexer auto-wiring",
+      "file": "messages/2026-04-23-MSG-0175-update-pharos.md",
+      "ref": "NONE",
+      "seq": 178
     }
   ],
   "protocol_amendments": [
