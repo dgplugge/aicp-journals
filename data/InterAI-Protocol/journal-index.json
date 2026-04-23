@@ -2150,6 +2150,19 @@
       "file": "messages/2026-04-22-MSG-0169-report-pharos.md",
       "ref": "NONE",
       "seq": 172
+    },
+    {
+      "id": "MSG-0170",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-23T11:37:59-04:00",
+      "task": "Summarizer-Role design lock - cross-round artifact for Rounds 1-6",
+      "file": "messages/2026-04-23-MSG-0170-report-pharos.md",
+      "ref": "NONE",
+      "seq": 173
     }
   ],
   "protocol_amendments": [
