@@ -2241,6 +2241,136 @@
       "file": "messages/2026-04-24-MSG-0176-report-pharos.md",
       "ref": "NONE",
       "seq": 179
+    },
+    {
+      "id": "MSG-0177",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-25T19:04:31-04:00",
+      "task": "MVP completion pass — agent-card tests refreshed, kernel STATE/MEMORY/NEXT_STEPS updated for current tree, Lumen PROVIDERS flag cleared",
+      "file": "messages/2026-04-25-MSG-0177-report-pharos.md",
+      "ref": "NONE",
+      "seq": 180
+    },
+    {
+      "id": "MSG-0178",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-26T12:16:43-04:00",
+      "task": "Hub-side Include RAG context checkbox shipped — per-dispatch short-circuit for verification, cold benchmarks, debug isolation, and sensitive-scope dispatches",
+      "file": "messages/2026-04-26-MSG-0178-report-pharos.md",
+      "ref": "MSG-0177",
+      "seq": 181
+    },
+    {
+      "id": "MSG-0179",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-26T20:54:56-04:00",
+      "task": "Card-load verification round complete — all 6 agents returned exact card-defined canaries; NEXT_STEPS #6 CLOSED",
+      "file": "messages/2026-04-26-MSG-0179-report-pharos.md",
+      "ref": "MSG-0178",
+      "seq": 182
+    },
+    {
+      "id": "MSG-0180",
+      "type": "UPDATE",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-27T12:16:06-04:00",
+      "task": "Mismatch v3 design state captured — paused for project-scoped RAG work; resume later",
+      "file": "messages/2026-04-27-MSG-0180-update-pharos.md",
+      "ref": "MSG-0179",
+      "seq": 183
+    },
+    {
+      "id": "MSG-0181",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-27T13:24:27-04:00",
+      "task": "Project selector dropdown shipped — Hub UI now scopes RAG and dispatch context per project; ghost-project typo mitigation in place; history clears on confirmed switch (prompt preserved)",
+      "file": "messages/2026-04-27-MSG-0181-report-pharos.md",
+      "ref": "MSG-0180",
+      "seq": 184
+    },
+    {
+      "id": "MSG-0182",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-27T15:04:28-04:00",
+      "task": "Exception-handler stack ported from OperatorHub into the Hub; activation in Sub Main; Report-a-Bug button wired to public GitHub Issues; email path stripped per Don's MVP constraint",
+      "file": "messages/2026-04-27-MSG-0182-report-pharos.md",
+      "ref": "MSG-0181",
+      "seq": 185
+    },
+    {
+      "id": "MSG-0183",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-27T19:53:06-04:00",
+      "task": "Licensing system shipped end-to-end — ECDSA-signed keys, 30-day trial, degraded mode, registration form, maintainer-only key generator. Phase 1 complete; ready for first paying customers",
+      "file": "messages/2026-04-27-MSG-0183-report-pharos.md",
+      "ref": "MSG-0182",
+      "seq": 186
+    },
+    {
+      "id": "MSG-0184",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-27T21:05:00-04:00",
+      "task": "First public release v1.0.3.1 shipped to dgplugge/interai-hub-clickonce. All three MVP workstreams (logging, licensing, public release) closed in one day",
+      "file": "messages/2026-04-27-MSG-0184-report-pharos.md",
+      "ref": "MSG-0183",
+      "seq": 187
+    },
+    {
+      "id": "MSG-0185",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-29T17:31:56-04:00",
+      "task": "Public-repo onboarding shipped — interactive PowerShell setup script + Quick Start guide + per-provider API key docs. Hub is now installable and configurable end-to-end by a non-developer",
+      "file": "messages/2026-04-29-MSG-0185-report-pharos.md",
+      "ref": "MSG-0184",
+      "seq": 188
+    },
+    {
+      "id": "MSG-0186",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-29T17:50:35-04:00",
+      "task": "Summarizer-Role fully wired: Hub VB.NET consumer landed, backfill tooling shipped, corpus activation step documented",
+      "file": "messages/2026-04-29-MSG-0186-report-pharos.md",
+      "ref": "NONE",
+      "seq": 189
     }
   ],
   "protocol_amendments": [
