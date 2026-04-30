@@ -2397,6 +2397,19 @@
       "file": "messages/2026-04-30-MSG-0188-report-pharos.md",
       "ref": "NONE",
       "seq": 191
+    },
+    {
+      "id": "MSG-0189",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-30T14:05:47-04:00",
+      "task": "Project-scoped kernel injection in Hub broadcast - landed and verified end-to-end",
+      "file": "messages/2026-04-30-MSG-0189-report-pharos.md",
+      "ref": "NONE",
+      "seq": 192
     }
   ],
   "protocol_amendments": [
