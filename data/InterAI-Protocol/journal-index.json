@@ -2371,6 +2371,32 @@
       "file": "messages/2026-04-29-MSG-0186-report-pharos.md",
       "ref": "NONE",
       "seq": 189
+    },
+    {
+      "id": "MSG-0187",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-30T11:12:01-04:00",
+      "task": "State-of-project readout captured as durable artifact (Markdown + downloadable Word doc); project-scoped kernel correction recorded as enhancement #11; frmAgentHub BackColor changed to AliceBlue for a focus/think palette",
+      "file": "messages/2026-04-30-MSG-0187-report-pharos.md",
+      "ref": "MSG-0185",
+      "seq": 190
+    },
+    {
+      "id": "MSG-0188",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-30T12:02:09-04:00",
+      "task": "Hub window color now configurable via agent-hub-config.json (ui.backColor)",
+      "file": "messages/2026-04-30-MSG-0188-report-pharos.md",
+      "ref": "NONE",
+      "seq": 191
     }
   ],
   "protocol_amendments": [
