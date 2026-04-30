@@ -2410,6 +2410,19 @@
       "file": "messages/2026-04-30-MSG-0189-report-pharos.md",
       "ref": "NONE",
       "seq": 192
+    },
+    {
+      "id": "MSG-0190",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-04-30T14:45:29-04:00",
+      "task": "Hub form simplification - project-scoped journal context + drop Dispatch Round button",
+      "file": "messages/2026-04-30-MSG-0190-report-pharos.md",
+      "ref": "NONE",
+      "seq": 193
     }
   ],
   "protocol_amendments": [
