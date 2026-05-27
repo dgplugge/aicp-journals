@@ -2423,6 +2423,19 @@
       "file": "messages/2026-04-30-MSG-0190-report-pharos.md",
       "ref": "NONE",
       "seq": 193
+    },
+    {
+      "id": "MSG-0191",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-05-27T10:07:06-04:00",
+      "task": "Runtime resilience slice (interai-protocol half) - viewer to 8081, Start-Viewer.ps1, infrastructure config doc",
+      "file": "messages/2026-05-27-MSG-0191-report-pharos.md",
+      "ref": "NONE",
+      "seq": 194
     }
   ],
   "protocol_amendments": [
