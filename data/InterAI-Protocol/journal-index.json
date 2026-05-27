@@ -2449,6 +2449,19 @@
       "file": "messages/2026-05-27-MSG-0192-report-pharos.md",
       "ref": "NONE",
       "seq": 195
+    },
+    {
+      "id": "MSG-0193",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-05-27T11:44:14-04:00",
+      "task": "Installer scaffolding - Inno Setup + winsw + 5-step install flow (Hub round consensus)",
+      "file": "messages/2026-05-27-MSG-0193-report-pharos.md",
+      "ref": "NONE",
+      "seq": 196
     }
   ],
   "protocol_amendments": [
