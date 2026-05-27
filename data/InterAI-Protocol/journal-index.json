@@ -2436,6 +2436,19 @@
       "file": "messages/2026-05-27-MSG-0191-report-pharos.md",
       "ref": "NONE",
       "seq": 194
+    },
+    {
+      "id": "MSG-0192",
+      "type": "REPORT",
+      "from": "Pharos",
+      "to": [
+        "All"
+      ],
+      "time": "2026-05-27T10:22:13-04:00",
+      "task": "Hub-side runtime resilience - Journal API startup health-check + auto-start (option 2 static accessor pattern)",
+      "file": "messages/2026-05-27-MSG-0192-report-pharos.md",
+      "ref": "NONE",
+      "seq": 195
     }
   ],
   "protocol_amendments": [
